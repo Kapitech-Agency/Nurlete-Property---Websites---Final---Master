@@ -1,0 +1,1 @@
+export function Insights() { return <div></div>; }
