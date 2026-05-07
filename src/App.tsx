@@ -3,9 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { RouterProvider } from 'react-router-dom';
-import { router } from './app/routes';
+import { AppRoutes } from './app/routes';
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return <AppRoutes />;
 }

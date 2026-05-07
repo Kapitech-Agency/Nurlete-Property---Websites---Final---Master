@@ -1,1 +1,0 @@
-export function InsightsPage() { return <div></div>; }
