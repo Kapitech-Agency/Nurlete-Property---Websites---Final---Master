@@ -94,7 +94,7 @@ export default function NavaTerraDetail() {
                 <Sparkles size={16} className="text-white animate-pulse" />
                 <span className="text-white font-bold uppercase tracking-[0.2em] text-[11px]">Quality Cluster</span>
               </div>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.95] font-semibold tracking-tight text-white mb-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] font-semibold tracking-tight text-white mb-6">
                 Nava Terra.
               </h1>
               <p className="text-white/80 text-xl md:text-2xl leading-[1.6] font-medium flex items-center gap-3">
@@ -211,7 +211,7 @@ export default function NavaTerraDetail() {
               <div className="absolute inset-0 bg-gradient-to-tr from-[#3C2A21]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center"><Home size={32} /></div>
               <div>
-                <span className="block text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold leading-none tracking-tighter mb-2">84</span>
+                <span className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-none tracking-tighter mb-2">84</span>
                 <span className="block font-bold text-[13px] md:text-[15px] uppercase tracking-[0.3em] text-[white]/70">Quality Units</span>
               </div>
             </div>
@@ -265,7 +265,7 @@ export default function NavaTerraDetail() {
       <section className="w-full py-30 md:py-45">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-7xl lg:text-8xl leading-[1] font-semibold tracking-tight text-[#000000] mb-6">View Available Units.</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl leading-[1] font-semibold tracking-tight text-[#000000] mb-6">View Available Units.</h2>
           <p className="text-[#000000]/60 text-lg md:text-xl font-medium max-w-2xl mx-auto">Specifically designed for discerning homeowners and families.</p>
         </div>
 
@@ -367,7 +367,7 @@ export default function NavaTerraDetail() {
           <div className="bg-[#000000] text-white rounded-[48px] md:rounded-[64px] p-12 md:p-30 lg:p-36 shadow-3xl relative overflow-hidden flex flex-col items-center text-center">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
           <div className="relative z-10 w-full max-w-4xl">
-            <h2 className="text-4xl md:text-7xl lg:text-8xl xl:text-9xl leading-[1] font-semibold tracking-tight mb-8">Secure Your Home.</h2>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1] font-semibold tracking-tight mb-8">Secure Your Home.</h2>
             <p className="text-white/60 text-lg md:text-2xl leading-[1.6] font-medium mb-16 max-w-2xl mx-auto">
               Nava Terra units are limited. Connect with our advisors today to discuss availability and schedule a private viewing.
             </p>

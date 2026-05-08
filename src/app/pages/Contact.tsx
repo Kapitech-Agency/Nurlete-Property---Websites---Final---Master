@@ -69,7 +69,7 @@ export default function Contact() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] font-semibold text-[#000000] tracking-tight mb-8 max-w-4xl mx-auto">
-            Find Your New <br/> Affordable Home.
+            Find Your New <br/> Quality Home.
           </h1>
 
           <p className="text-[#000000]/60 text-base md:text-lg leading-[1.7] max-w-2xl mx-auto font-medium">
@@ -279,9 +279,9 @@ export default function Contact() {
                     <button 
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-[#000000] text-white font-bold text-base px-8 py-5 min-h-[64px] rounded-full hover:bg-[#3C2A21] hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-3 shadow-2xl"
+                      className="w-full bg-[#000000] text-white font-bold text-base px-8 py-4 min-h-[56px] rounded-full hover:bg-[#3C2A21] hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-3 shadow-2xl"
                     >
-                      {isSubmitting ? 'Sending Request...' : 'Submit Request'} <ArrowUpRight size={20} />
+                      {isSubmitting ? 'Sending Request...' : 'Submit Request'} <ArrowUpRight size={18} />
                     </button>
                   </div>
                 </form>

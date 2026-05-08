@@ -26,7 +26,7 @@ export function Footer() {
                 </span>
               </Link>
               <p className="text-white/60 text-lg leading-[1.7] max-w-lg mb-12 font-medium">
-                Established January 2026. Providing high-quality, affordable cluster housing in Eastern Indonesia. We focus on building safe, accessible, and functional homes for local families.
+                Established January 2026. Providing high-quality, value-driven cluster housing in Eastern Indonesia. We focus on building safe, accessible, and functional homes for local families.
               </p>
               
               <div className="flex items-center gap-5">
@@ -70,12 +70,12 @@ export function Footer() {
                   sales@nurleteproperty.com
                 </p>
                 <p className="text-white/60 text-base leading-[1.7] font-medium">
-                  Affordable homes for everyone. Reach out to our team to find your new house.
+                  Quality homes for everyone. Reach out to our team to find your new house.
                 </p>
               </div>
               
-              <Link to="/contact" className="inline-flex bg-white text-[#000000] rounded-full px-10 py-5 text-base font-bold items-center justify-center gap-3 hover:bg-[#3C2A21] hover:text-white hover:scale-[1.02] active:scale-[0.98] transition-all shadow-3xl w-full">
-                Contact sales <ArrowUpRight size={20} />
+              <Link to="/contact" className="inline-flex bg-white text-[#000000] rounded-full px-8 py-4 text-base font-bold items-center justify-center gap-3 hover:bg-[#3C2A21] hover:text-white hover:scale-[1.02] active:scale-[0.98] transition-all shadow-3xl w-full">
+                Contact sales <ArrowUpRight size={18} />
               </Link>
             </div>
           </div>

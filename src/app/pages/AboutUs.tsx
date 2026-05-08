@@ -44,10 +44,10 @@ export default function AboutUs() {
   };
 
   const timeline = [
-    { year: "Jan 2026", title: "Company Foundation", desc: "Nurlete Property was founded to provide affordable housing solutions in Eastern Indonesia, focusing on quality cluster homes accessible to the middle class." },
+    { year: "Jan 2026", title: "Company Foundation", desc: "Nurlete Property was founded to provide value-driven housing solutions in Eastern Indonesia, focusing on quality cluster homes accessible to the middle class." },
     { year: "Feb 2026", title: "Project Initiation", desc: "We started our flagship Nava Terra cluster in Halong Atas, chosen for its safety, accessibility, and solid ground." },
     { year: "Mar 2026", title: "Construction Start", desc: "We committed to efficient building methods and practical layouts that maximize value for every homeowner." },
-    { year: "Future 2026", title: "Community Building", desc: "Our focus remains on delivering high-quality, affordable cluster homes that serve the needs of local families." }
+    { year: "Future 2026", title: "Community Building", desc: "Our focus remains on delivering high-quality, accessible cluster homes that serve the needs of local families." }
   ];
 
   const values = [
@@ -71,7 +71,7 @@ export default function AboutUs() {
           >
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-            alt="Affordable Housing Vision" 
+            alt="Quality Housing Vision" 
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#000000]/30 backdrop-blur-[1px]" />
@@ -84,7 +84,7 @@ export default function AboutUs() {
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-[1.05] font-semibold text-white tracking-tight drop-shadow-2xl mb-6">
               Quality Homes.<br/>
-              <span className="text-white/70">Affordable Living.</span>
+              <span className="text-white/70">Value-Driven Living.</span>
             </h1>
             <p className="text-white/90 text-base md:text-lg lg:text-xl leading-[1.6] font-medium max-w-3xl mx-auto">
               Based in Maluku, Nurlete Property builds high-quality cluster homes for families who value safety, practical design, and incredible value.

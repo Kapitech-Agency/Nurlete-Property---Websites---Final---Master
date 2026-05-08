@@ -8,7 +8,7 @@ export function NavaTerraOverview() {
   const y1 = useTransform(scrollY, [500, 1500], [0, 200]);
 
   return (
-    <section className="relative min-h-[800px] flex items-center justify-center overflow-hidden bg-[#000000]">
+    <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000000]">
       {/* Flagship Project - Natural Colors, No overlapping black top */}
       <div className="absolute inset-0 z-0">
         <motion.img 

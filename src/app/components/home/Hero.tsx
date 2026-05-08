@@ -21,23 +21,23 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3C2A21]/20 mb-8 shadow-[0_4px_12px_rgba(0,0,0,0.03)] min-h-[44px]">
               <div className="w-3 h-3 rounded-full bg-[#3C2A21] animate-pulse" />
-              <span className="text-[#3C2A21] font-bold uppercase tracking-[0.2em] text-xs leading-none">Affordable Housing Developer</span>
+              <span className="text-[#3C2A21] font-bold uppercase tracking-[0.2em] text-xs leading-none">Quality Housing Developer</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-[1.05] font-semibold text-[#000000] tracking-tight">
               Quality Homes.<br />
-              <span className="text-[#000000]/40">Affordable For All.</span>
+              <span className="text-[#000000]/40">Excellence For All.</span>
             </h1>
             
             <p className="text-[#000000]/60 mt-6 max-w-xl text-base lg:text-lg leading-[1.6] font-medium">
               Nurlete Property develops high-quality, accessible cluster homes in Maluku. We build safe, functional living spaces designed for local families, focusing on real value and strong communities.
             </p>
 
-            <div className="mt-12 flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="flex items-center justify-center gap-3 bg-[#000000] text-white rounded-full px-10 py-5 min-h-[4rem] flex-1 sm:flex-none font-bold text-lg shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:scale-[1.02] active:scale-[0.98] transition-all">
-                Contact our Team <ArrowRight size={20} />
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <Link to="/contact" className="flex items-center justify-center gap-3 bg-[#000000] text-white rounded-full px-8 py-4 min-h-[3.5rem] flex-1 sm:flex-none font-bold text-base shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+                Contact our Team <ArrowRight size={18} />
               </Link>
-              <Link to="/project/nava-terra" className="flex items-center justify-center gap-3 bg-white border border-[#000000]/10 text-[#000000] rounded-full px-10 py-5 min-h-[4rem] flex-1 sm:flex-none font-bold text-lg hover:bg-[#F5F4F0] transition-all shadow-sm text-center">
+              <Link to="/project/nava-terra" className="flex items-center justify-center gap-3 bg-white border border-[#000000]/10 text-[#000000] rounded-full px-8 py-4 min-h-[3.5rem] flex-1 sm:flex-none font-bold text-base hover:bg-[#F5F4F0] transition-all shadow-sm text-center">
                 View Nava Terra
               </Link>
             </div>
