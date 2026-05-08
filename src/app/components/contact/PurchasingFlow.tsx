@@ -22,17 +22,17 @@ export function PurchasingFlow() {
  ];
 
  return (
- <section className="py-[120px] md:py-[180px] bg-white relative z-10 border-t border-[#000000]/[0.05]">
- <div className="max-w-[1600px] mx-auto px-[20px] md:px-[80px]">
+ <section className="py-20 md:py-32 bg-white relative z-10 border-t border-[#000000]/[0.05]">
+ <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
  
- <div className="text-center mb-[80px]">
-   <div className="inline-flex items-center gap-[8px] px-[20px] py-[10px] rounded-full bg-[#f1f1f1] text-[#000000]/60 mb-[24px]">
+ <div className="text-center mb-20 text-balance">
+   <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#f1f1f1] text-[#000000]/60 mb-6">
      <span className="font-bold uppercase tracking-[0.2em] text-[11px]">Process Overview</span>
    </div>
- <h2 className="font-sans text-[40px] md:text-[64px] font-semibold text-[#000000] tracking-tight mb-[24px]">
+ <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#000000] tracking-tight mb-6">
  Purchasing Procedure.
  </h2>
- <p className="font-sans text-[#000000]/60 max-w-2xl mx-auto text-[18px] md:text-[20px] leading-[1.7] font-medium">
+ <p className="font-sans text-[#000000]/60 max-w-2xl mx-auto text-base md:text-lg leading-[1.7] font-medium">
  Transparent, secure, and fully guided. Whether you prefer cash installments or leveraging banking partnerships.
  </p>
  </div>

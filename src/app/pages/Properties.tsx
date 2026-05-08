@@ -29,121 +29,17 @@ export default function Properties() {
   const properties: Property[] = [
     {
       id: 1,
-      title: "Modern Minimalist House",
-      location: "BSD City, Tangerang",
-      price: 3200000000,
-      priceDisplay: "Rp 3.2M",
+      title: "Nava Terra Cluster",
+      location: "Halong Atas, Ambon",
+      price: 0,
+      priceDisplay: "Open for Booking",
       category: "residential",
-      image: "https://images.unsplash.com/photo-1706808849803-f61304e024ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      beds: 4,
-      baths: 3,
-      area: "250 m²",
-      description: "Beautiful modern house in prestigious residential complex",
-    },
-    {
-      id: 2,
-      title: "Luxury Pool Villa",
-      location: "Alam Sutera, Tangerang",
-      price: 8500000000,
-      priceDisplay: "Rp 8.5M",
-      category: "residential",
-      image: "https://images.unsplash.com/photo-1706855203772-c249b75fe016?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      beds: 5,
-      baths: 4,
-      area: "450 m²",
-      description: "Stunning villa with private pool and garden",
-    },
-    {
-      id: 3,
-      title: "Elite Residence Complex",
-      location: "Sentul City, Bogor",
-      price: 5700000000,
-      priceDisplay: "Rp 5.7M",
-      category: "residential",
-      image: "https://images.unsplash.com/photo-1706808849827-7366c098b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      beds: 4,
-      baths: 3,
-      area: "320 m²",
-      description: "Premium house in exclusive gated community",
-    },
-    {
-      id: 4,
-      title: "Grand Mahogany Apartment",
-      location: "Sudirman, Jakarta",
-      price: 2800000000,
-      priceDisplay: "Rp 2.8M",
-      category: "high-rise",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-      beds: 2,
-      baths: 2,
-      area: "85 m²",
-      description: "Luxury apartment with city skyline views",
-    },
-    {
-      id: 5,
-      title: "Sky Tower Penthouse",
-      location: "SCBD, Jakarta Selatan",
-      price: 12500000000,
-      priceDisplay: "Rp 12.5M",
-      category: "high-rise",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-      beds: 3,
-      baths: 3,
-      area: "180 m²",
-      description: "Exclusive penthouse with panoramic views",
-    },
-    {
-      id: 6,
-      title: "Boutique Hotel Suite",
-      location: "Kemang, Jakarta Selatan",
-      price: 4200000000,
-      priceDisplay: "Rp 4.2M",
-      category: "high-rise",
-      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      beds: 1,
-      baths: 1,
-      area: "55 m²",
-      description: "Modern hotel-style apartment with amenities",
-    },
-    {
-      id: 7,
-      title: "Student Kost Premium",
-      location: "UI Depok, Jawa Barat",
-      price: 42000000, // 3.5m/mo approx 42m/yr
-      priceDisplay: "Rp 3.5 Juta/bulan",
-      category: "rentals",
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
-      beds: 1,
-      baths: 1,
-      area: "25 m²",
-      description: "Fully furnished room near university campus",
-    },
-    {
-      id: 8,
-      title: "Executive Kontrakan",
-      location: "Bintaro, Tangerang Selatan",
-      price: 45000000,
-      priceDisplay: "Rp 45 Juta/tahun",
-      category: "rentals",
-      image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80",
       beds: 3,
       baths: 2,
-      area: "120 m²",
-      description: "Spacious rental house for families",
-    },
-    {
-      id: 9,
-      title: "Co-Living Space",
-      location: "Tebet, Jakarta Selatan",
-      price: 57600000, // 4.8m/mo -> 57.6m/yr
-      priceDisplay: "Rp 4.8 Juta/bulan",
-      category: "rentals",
-      image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
-      beds: 1,
-      baths: 1,
-      area: "30 m²",
-      description: "Modern co-living with shared amenities",
-    },
+      area: "75 m²",
+      description: "Our available 2026 flagship project. Built on solid ground in Halong Atas, offering modern design and safe housing for families.",
+    }
   ];
 
   const filteredProperties = properties.filter((p) => {
@@ -174,34 +70,35 @@ export default function Properties() {
   return (
     <div className="bg-[#F5F4F0] min-h-screen">
       {/* Header Section */}
-      <section className="bg-[#000000] py-[120px] pt-[200px] rounded-b-[48px] shadow-2xl relative z-20">
-        <div className="max-w-[1600px] mx-auto px-[20px] md:px-[80px]">
-          <h1 className="text-[clamp(2.5rem,5vw,5rem)] font-semibold text-white tracking-tight mb-[16px]">Browse Portfolios.</h1>
-          <p className="text-[clamp(1rem,2vw,1.25rem)] text-white/60 max-w-2xl font-medium">
+      <section className="bg-[#000000] py-20 md:py-24 lg:py-32 pt-40 md:pt-48 lg:pt-56 rounded-b-[48px] shadow-2xl relative z-20">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-white tracking-tight mb-4">Browse Portfolios.</h1>
+          <p className="text-base md:text-lg text-white/60 max-w-2xl font-medium">
             Discover your perfect property from our exclusive collection. Use the advanced filters to curate your results.
           </p>
         </div>
       </section>
 
       {/* Advanced Search & Filter Interface */}
-      <section className="-mt-[48px] relative z-30 px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[64px]">
-        <div className="bg-white rounded-[32px] p-[32px] shadow-[0_32px_64px_rgba(0,0,0,0.05)] border border-[#000000]/10">
-          <div className="flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
+      <section className="-mt-12 relative z-30 w-full mb-16">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="bg-white rounded-[32px] p-6 md:p-8 lg:p-10 shadow-[0_32px_64px_rgba(0,0,0,0.05)] border border-[#000000]/10">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6">
             {/* Search Input */}
             <div className="flex-1 relative">
-              <Search className="absolute left-[20px] top-[50%] -translate-y-1/2 text-[#000000]/40" size={20} />
+              <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-[#000000]/40" size={20} />
               <input 
                 type="text" 
                 placeholder="Search by name, neighborhood, or location..." 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-[#F5F4F0] border-none rounded-[16px] pl-[56px] pr-[20px] py-[20px] text-[16px] font-medium outline-none focus:ring-2 focus:ring-[#3C2A21] transition-all"
+                className="w-full bg-[#F5F4F0] border-none rounded-xl md:rounded-2xl pl-12 pr-5 py-4 text-base font-medium outline-none focus:ring-2 focus:ring-[#3C2A21] transition-all"
               />
             </div>
             {/* Options Toggle */}
             <button 
               onClick={() => setIsFiltersOpen(!isFiltersOpen)}
-              className={`px-[32px] py-[20px] rounded-[16px] font-bold text-[16px] flex items-center justify-center gap-[12px] transition-all ${isFiltersOpen ? 'bg-[#3C2A21] text-white shadow-xl' : 'bg-[#F5F4F0] text-[#000000] hover:bg-[#3C2A21] hover:text-white'}`}
+              className={`px-6 py-4 rounded-xl md:rounded-2xl font-bold text-base flex items-center justify-center gap-3 transition-all ${isFiltersOpen ? 'bg-[#3C2A21] text-white shadow-xl' : 'bg-[#F5F4F0] text-[#000000] hover:bg-[#3C2A21] hover:text-white'}`}
             >
               <SlidersHorizontal size={20} /> Advanced Filters
             </button>
@@ -215,17 +112,17 @@ export default function Properties() {
                 exit={{ height: 0, opacity: 0 }}
                 className="overflow-hidden"
               >
-                <div className="pt-[32px] mt-[32px] border-t border-[#000000]/10 grid grid-cols-1 md:grid-cols-2 gap-[32px]">
+                <div className="pt-8 mt-8 border-t border-[#000000]/10 grid grid-cols-1 md:grid-cols-2 gap-8">
                   
                   {/* Category Filter */}
                   <div>
-                    <label className="block text-[13px] font-bold uppercase tracking-widest text-[#000000]/50 mb-[16px]">Asset Classification</label>
-                    <div className="inline-flex bg-[#F5F4F0] rounded-[16px] p-[8px] max-w-full overflow-x-auto hide-scrollbar">
+                    <label className="block text-[13px] font-bold uppercase tracking-widest text-[#000000]/50 mb-4">Asset Classification</label>
+                    <div className="inline-flex bg-[#F5F4F0] rounded-2xl p-2 max-w-full overflow-x-auto hide-scrollbar">
                       {(["all", "residential", "high-rise", "rentals"] as PropertyCategory[]).map(cat => (
                         <button
                           key={cat}
                           onClick={() => setSelectedCategory(cat)}
-                          className={`px-[24px] py-[12px] rounded-[10px] font-bold text-[14px] whitespace-nowrap transition-all ${
+                          className={`px-6 py-3 rounded-xl font-bold text-sm whitespace-nowrap transition-all ${
                             selectedCategory === cat ? 'bg-white shadow border border-[#000000]/5 text-[#3C2A21]' : 'text-[#000000]/50 hover:text-[#000000]'
                           }`}
                         >
@@ -237,7 +134,7 @@ export default function Properties() {
 
                   {/* Price Filter */}
                   <div>
-                     <label className="block text-[13px] font-bold uppercase tracking-widest text-[#000000]/50 mb-[16px]">
+                     <label className="block text-[13px] font-bold uppercase tracking-widest text-[#000000]/50 mb-4">
                        Maximum Price: <span className="text-[#3C2A21]">{formatIDR(priceRange)}</span>
                      </label>
                      <input 
@@ -247,9 +144,9 @@ export default function Properties() {
                       step={50000000}
                       value={priceRange} 
                       onChange={(e) => setPriceRange(parseInt(e.target.value))}
-                      className="w-full accent-[#3C2A21] h-[8px] bg-[#F5F4F0] rounded-full appearance-none cursor-pointer outline-none"
+                      className="w-full accent-[#3C2A21] h-2 bg-[#F5F4F0] rounded-full appearance-none cursor-pointer outline-none"
                     />
-                    <div className="flex justify-between text-[#000000]/40 text-[12px] font-medium mt-[8px]">
+                    <div className="flex justify-between text-[#000000]/40 text-[12px] font-medium mt-2">
                       <span>Rp 0</span>
                       <span>Rp 20 Miliar+</span>
                     </div>
@@ -261,16 +158,20 @@ export default function Properties() {
           </AnimatePresence>
 
         </div>
+        </div>
       </section>
 
       {/* Properties Count */}
-      <div className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[32px] text-[#000000]/60 font-medium">
-        Curating <span className="font-bold text-[#3C2A21]">{filteredProperties.length}</span> verified results...
+      <div className="w-full mb-8 text-[#000000]/60 font-medium">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          Curating <span className="font-bold text-[#3C2A21]">{filteredProperties.length}</span> verified results...
+        </div>
       </div>
 
       {/* Properties Grid */}
-      <section className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto pb-[120px]">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[40px]">
+      <section className="w-full pb-24 md:pb-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
           <AnimatePresence>
             {filteredProperties.map((property) => (
               <motion.div
@@ -288,43 +189,43 @@ export default function Properties() {
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[4s]"
                   />
-                  <div className="absolute top-[20px] right-[20px]">
-                    <span className="inline-block px-[16px] py-[8px] bg-white/90 backdrop-blur-md text-[#3C2A21] text-[12px] font-bold uppercase tracking-widest rounded-full shadow-lg">
+                  <div className="absolute top-5 right-5">
+                    <span className="inline-block px-4 py-2 bg-white/90 backdrop-blur-md text-[#3C2A21] text-[12px] font-bold uppercase tracking-widest rounded-full shadow-lg">
                       {getCategoryLabel(property.category)}
                     </span>
                   </div>
-                  <div className="absolute bottom-[20px] left-[20px]">
-                    <div className="bg-[#3C2A21] text-white px-[20px] py-[10px] rounded-full font-bold text-[18px] shadow-xl">
+                  <div className="absolute bottom-5 left-5">
+                    <div className="bg-[#3C2A21] text-white px-5 py-2.5 rounded-full font-bold text-lg shadow-xl">
                       {property.priceDisplay}
                     </div>
                   </div>
                 </div>
 
-                <div className="p-[32px] flex-1 flex flex-col">
-                  <h3 className="text-[24px] font-bold text-[#000000] tracking-tight mb-[8px]">{property.title}</h3>
-                  <div className="flex items-center gap-[8px] text-[#000000]/50 mb-[24px] font-medium text-[15px]">
+                <div className="p-8 md:p-10 flex-1 flex flex-col">
+                  <h3 className="text-2xl font-bold text-[#000000] tracking-tight mb-2">{property.title}</h3>
+                  <div className="flex items-center gap-2 text-[#000000]/50 mb-6 font-medium text-[15px]">
                     <MapPin size={16} />
                     <span>{property.location}</span>
                   </div>
 
-                  <p className="text-[#000000]/70 text-[16px] leading-[1.6] mb-[32px] line-clamp-2 flex-1">
+                  <p className="text-[#000000]/70 text-base leading-[1.6] mb-8 line-clamp-2 flex-1">
                     {property.description}
                   </p>
 
-                  <div className="flex items-center gap-[16px] mb-[32px] text-[#000000]/80">
+                  <div className="flex items-center gap-4 mb-8 text-[#000000]/80">
                     {property.beds && (
-                      <div className="flex items-center gap-[8px] bg-[#F5F4F0] px-[16px] py-[8px] rounded-[12px]">
+                      <div className="flex items-center gap-2 bg-[#F5F4F0] px-4 py-2 rounded-xl">
                         <Bed size={16} className="text-[#3C2A21]" />
                         <span className="font-bold text-[13px]">{property.beds}</span>
                       </div>
                     )}
                     {property.baths && (
-                      <div className="flex items-center gap-[8px] bg-[#F5F4F0] px-[16px] py-[8px] rounded-[12px]">
+                      <div className="flex items-center gap-2 bg-[#F5F4F0] px-4 py-2 rounded-xl">
                         <Bath size={16} className="text-[#3C2A21]" />
                         <span className="font-bold text-[13px]">{property.baths}</span>
                       </div>
                     )}
-                    <div className="flex items-center gap-[8px] bg-[#F5F4F0] px-[16px] py-[8px] rounded-[12px]">
+                    <div className="flex items-center gap-2 bg-[#F5F4F0] px-4 py-2 rounded-xl">
                       <Square size={16} className="text-[#3C2A21]" />
                       <span className="font-bold text-[13px]">{property.area}</span>
                     </div>
@@ -332,7 +233,7 @@ export default function Properties() {
 
                   <Link 
                     to={`/property/${property.id}`} 
-                    className="w-full bg-[#000000] text-white px-[24px] py-[16px] rounded-[16px] font-bold text-[16px] text-center hover:bg-[#3C2A21] active:scale-[0.98] transition-all shadow-md"
+                    className="w-full bg-[#000000] text-white px-6 py-4 rounded-xl md:rounded-2xl font-bold text-base text-center hover:bg-[#3C2A21] active:scale-[0.98] transition-all shadow-md"
                   >
                     View Details
                   </Link>
@@ -346,15 +247,16 @@ export default function Properties() {
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-center py-[120px]"
+            className="text-center py-24 md:py-32"
           >
-            <div className="w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center mx-auto mb-[24px] shadow-lg">
+            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
               <Search size={32} className="text-[#000000]/20" />
             </div>
-            <h3 className="text-[28px] font-semibold text-[#000000] mb-[8px]">No matches found</h3>
-            <p className="text-[18px] text-[#000000]/50 font-medium">Try adjusting your filters or search query to discover more properties.</p>
+            <h3 className="text-3xl font-semibold text-[#000000] mb-2">No matches found</h3>
+            <p className="text-lg md:text-xl text-[#000000]/50 font-medium">Try adjusting your filters or search query to discover more properties.</p>
           </motion.div>
         )}
+        </div>
       </section>
     </div>
   );

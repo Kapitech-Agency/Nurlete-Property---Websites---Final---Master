@@ -9,35 +9,35 @@ export function Hero() {
   const y2 = useTransform(scrollY, [0, 500], [0, -50]);
 
   return (
-    <section id="home" className="relative min-h-[110vh] pt-[160px] pb-[120px] flex items-center z-10 font-sans bg-[#F5F4F0]">
-      <div className="max-w-[1600px] mx-auto w-full px-[20px] md:px-[80px] grid grid-cols-1 lg:grid-cols-12 gap-[64px] lg:gap-[96px] items-center">
+    <section id="home" className="relative min-h-screen pt-32 pb-20 md:pb-24 flex items-center z-10 font-sans bg-[#F5F4F0] w-full overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
         
         {/* Left Content */}
-        <motion.div style={{ y: y2 }} className="flex flex-col gap-[32px] lg:col-span-6 mt-[64px] lg:mt-0 z-20">
+        <motion.div style={{ y: y2 }} className="flex flex-col gap-8 z-20">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
           >
-            <div className="inline-flex items-center gap-[8px] px-[16px] py-[8px] rounded-full bg-white border border-[#3C2A21]/20 mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.03)] min-h-[44px]">
-              <div className="w-[12px] h-[12px] rounded-full bg-[#3C2A21] animate-pulse" />
-              <span className="text-[#3C2A21] font-bold uppercase tracking-[0.2em] text-[11px] leading-none">Premium Real Estate Developer</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3C2A21]/20 mb-8 shadow-[0_4px_12px_rgba(0,0,0,0.03)] min-h-[44px]">
+              <div className="w-3 h-3 rounded-full bg-[#3C2A21] animate-pulse" />
+              <span className="text-[#3C2A21] font-bold uppercase tracking-[0.2em] text-xs leading-none">Affordable Housing Developer</span>
             </div>
             
-            <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] font-semibold text-[#000000] tracking-tight">
-              Modern Design.<br />
-              <span className="text-[#000000]/40">Exceptional Living.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-[1.05] font-semibold text-[#000000] tracking-tight">
+              Quality Homes.<br />
+              <span className="text-[#000000]/40">Affordable For All.</span>
             </h1>
             
-            <p className="text-[#000000]/60 mt-[24px] max-w-xl text-[clamp(1.125rem,2vw,1.25rem)] leading-[1.6] font-medium">
-              Nurlete Property develops high-quality real estate in Maluku. We build modern, functional homes designed for long-term value, focusing on structural integrity and thoughtful site planning.
+            <p className="text-[#000000]/60 mt-6 max-w-xl text-base lg:text-lg leading-[1.6] font-medium">
+              Nurlete Property develops high-quality, accessible cluster homes in Maluku. We build safe, functional living spaces designed for local families, focusing on real value and strong communities.
             </p>
 
-            <div className="mt-[48px] flex flex-col sm:flex-row gap-[16px]">
-              <Link to="/contact" className="flex items-center justify-center gap-3 bg-[#000000] text-white rounded-full px-10 py-5 min-h-[4rem] font-bold text-[1.125rem] shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:scale-[1.02] active:scale-[0.98] transition-all">
-                Contact an Advisor <ArrowRight size={20} />
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
+              <Link to="/contact" className="flex items-center justify-center gap-3 bg-[#000000] text-white rounded-full px-10 py-5 min-h-[4rem] flex-1 sm:flex-none font-bold text-lg shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+                Contact our Team <ArrowRight size={20} />
               </Link>
-              <Link to="/project/nava-terra" className="flex items-center justify-center gap-3 bg-white border border-[#000000]/10 text-[#000000] rounded-full px-10 py-5 min-h-[4rem] font-bold text-[1.125rem] hover:bg-[#F5F4F0] transition-all shadow-sm">
+              <Link to="/project/nava-terra" className="flex items-center justify-center gap-3 bg-white border border-[#000000]/10 text-[#000000] rounded-full px-10 py-5 min-h-[4rem] flex-1 sm:flex-none font-bold text-lg hover:bg-[#F5F4F0] transition-all shadow-sm text-center">
                 View Nava Terra
               </Link>
             </div>
@@ -48,27 +48,27 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="w-full bg-white border border-[#000000]/5 p-[16px] rounded-[32px] flex flex-col sm:flex-row flex-wrap gap-[16px] shadow-[0_24px_48px_rgba(0,0,0,0.02)] mt-[32px]"
+            className="w-full bg-white border border-[#000000]/15 p-4 rounded-3xl flex flex-col sm:flex-row flex-wrap gap-4 shadow-[0_24px_48px_rgba(0,0,0,0.02)] mt-8"
           >
             <Link 
               to="/insights"
-              className="flex-1 min-w-[180px] min-h-[64px] flex items-center bg-[#F5F4F0]/50 hover:bg-[#F5F4F0] border border-transparent hover:border-[#000000]/5 rounded-[24px] px-[24px] py-[16px] transition-all cursor-pointer group active:scale-[0.98]"
+              className="flex-1 min-w-[200px] min-h-[4.5rem] flex items-center bg-[#F5F4F0]/50 hover:bg-[#F5F4F0] border border-transparent hover:border-[#000000]/5 rounded-2xl px-6 py-4 transition-all cursor-pointer group active:scale-[0.98]"
             >
-              <Wallet className="text-[#3C2A21] mr-[14px]" size={24} />
+              <Wallet className="text-[#3C2A21] mr-3 shrink-0" size={24} />
               <div className="flex flex-col">
-                <span className="text-[#000000]/40 text-[10px] uppercase tracking-widest mb-[1px] font-bold">Investment</span>
-                <span className="text-[#000000] text-[15px] font-bold">Market Reports</span>
+                <span className="text-[#000000]/40 text-[10px] uppercase tracking-widest mb-0.5 font-bold">Investment</span>
+                <span className="text-[#000000] text-base font-bold">Market Reports</span>
               </div>
             </Link>
 
             <Link 
               to="/project/nava-terra"
-              className="flex-1 min-w-[180px] min-h-[64px] flex items-center bg-[#F5F4F0]/50 hover:bg-[#F5F4F0] border border-transparent hover:border-[#000000]/5 rounded-[24px] px-[24px] py-[16px] transition-all cursor-pointer group active:scale-[0.98]"
+              className="flex-1 min-w-[200px] min-h-[4.5rem] flex items-center bg-[#F5F4F0]/50 hover:bg-[#F5F4F0] border border-transparent hover:border-[#000000]/5 rounded-2xl px-6 py-4 transition-all cursor-pointer group active:scale-[0.98]"
             >
-              <MapPin className="text-[#3C2A21] mr-[14px]" size={24} />
+              <MapPin className="text-[#3C2A21] mr-3 shrink-0" size={24} />
               <div className="flex flex-col">
-                <span className="text-[#000000]/40 text-[10px] uppercase tracking-widest mb-[1px] font-bold">Location</span>
-                <span className="text-[#000000] text-[15px] font-bold">Explore Masterplan</span>
+                <span className="text-[#000000]/40 text-[10px] uppercase tracking-widest mb-0.5 font-bold">Location</span>
+                <span className="text-[#000000] text-base font-bold">Explore Masterplan</span>
               </div>
             </Link>
           </motion.div>
@@ -80,13 +80,13 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-          className="relative z-10 w-full h-full min-h-[400px] lg:min-h-[700px] lg:col-span-6"
+          className="relative z-10 w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-center justify-center lg:col-span-1"
         >
           {/* Main Cinematic Image Container */}
-          <div className="absolute inset-0 rounded-[48px] md:rounded-[64px] overflow-hidden shadow-[0_48px_120px_rgba(0,0,0,0.15)] border border-[#3C2A21]/10">
+          <div className="relative aspect-[4/5] lg:aspect-auto lg:h-[max(500px,min(60vh,700px))] w-full rounded-3xl md:rounded-[3rem] overflow-hidden shadow-[0_48px_120px_rgba(0,0,0,0.15)] border border-[#3C2A21]/10">
             <img 
               src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-              alt="Elite Architecture - Nurlete 2026" 
+              alt="Cluster Housing - Nurlete 2026" 
               className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-[4s]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#3C2A21]/40 via-transparent to-transparent opacity-60" />
@@ -96,25 +96,25 @@ export function Hero() {
           <motion.div 
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute bottom-[48px] left-[16px] md:-left-[64px] bg-white border border-[#3C2A21]/20 rounded-[40px] p-[24px] shadow-[0_32px_64px_rgba(0,0,0,0.1)] flex items-center gap-[20px] max-w-sm z-30"
+            className="absolute bottom-8 left-4 bg-white border border-[#3C2A21]/20 rounded-[2rem] p-4 md:p-6 shadow-[0_32px_64px_rgba(0,0,0,0.1)] flex items-center gap-4 max-w-[min(90vw,380px)] z-30"
           >
-            <div className="w-[80px] h-[80px] rounded-[24px] overflow-hidden shrink-0 border border-[#3C2A21]/10">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden shrink-0 border border-[#3C2A21]/10">
               <img 
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                 alt="Property Curation Detail" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div>
-              <div className="flex items-center gap-[6px] mb-[6px]">
-                <Sparkles size={14} className="text-[#3C2A21]" />
-                <span className="text-[#3C2A21] font-bold text-[10px] uppercase tracking-widest">Flagship Status</span>
+            <div className="overflow-hidden">
+              <div className="flex items-center gap-1.5 mb-1.5">
+                <Sparkles size={14} className="text-[#3C2A21] shrink-0" />
+                <span className="text-[#3C2A21] font-bold text-[10px] uppercase tracking-widest truncate">Flagship Status</span>
               </div>
-              <p className="text-[#000000] font-bold text-[18px] leading-[1.2] mb-[4px]">Nava Terra Cluster</p>
-              <div className="flex gap-[8px] items-center">
-                <span className="text-[#000000]/50 font-semibold text-[13px]">Halong Atas</span>
-                <span className="w-[4px] h-[4px] rounded-full bg-[#3C2A21]/20" />
-                <span className="text-[#3C2A21] text-[13px] font-bold underline underline-offset-4">View Project Details</span>
+              <p className="text-[#000000] font-bold text-lg md:text-xl leading-[1.2] mb-1 truncate">Nava Terra Cluster</p>
+              <div className="flex gap-2 items-center">
+                <span className="text-[#000000]/50 font-semibold text-[13px] truncate">Halong Atas</span>
+                <span className="w-1 h-1 rounded-full bg-[#3C2A21]/20 shrink-0" />
+                <span className="text-[#3C2A21] text-xs font-bold underline underline-offset-4 cursor-pointer">View Details</span>
               </div>
             </div>
           </motion.div>

@@ -21,25 +21,25 @@ export function Experience() {
  };
 
  return (
- <section id="experience-section" className="py-[120px] md:py-[160px] relative z-10 bg-[#000000] text-[#F5F4F0] overflow-hidden font-['Inter']">
+ <section id="experience-section" className="py-20 md:py-32 relative z-10 bg-[#000000] text-[#F5F4F0] overflow-hidden min-h-screen flex flex-col justify-center">
  {/* Background Elements */}
  <div className="absolute top-0 right-0 w-[50%] h-[100%] pointer-events-none opacity-10">
  <div className="absolute top-[-20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-white blur-[150px]" />
  </div>
 
- <div className="max-w-7xl mx-auto px-[20px] md:px-[80px] w-full relative z-10">
+ <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 w-full relative z-10">
  
- <div className="mb-[64px] text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-[32px]">
+ <div className="mb-12 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
  <div>
- <div className="inline-flex items-center gap-[8px] px-[16px] py-[8px] rounded-full bg-white/10 backdrop-blur-xl border border-white/20 mb-[24px] shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]">
- <span className="w-[8px] h-[8px] rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+ <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 mb-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]">
+ <span className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
  <span className="text-white font-bold uppercase tracking-[0.2em] text-[11px] leading-none">Interactive Experience</span>
  </div>
- <h2 className="text-[32px] md:text-[48px] leading-[1.2] font-semibold tracking-tight text-white">
+ <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.2] font-semibold tracking-tight text-white">
  Immerse in <span className="text-white/50">Nava Terra</span>
  </h2>
  </div>
- <p className="text-white/60 text-[15px] md:text-[16px] leading-[1.6] font-medium max-w-md">
+ <p className="text-white/60 text-base md:text-lg leading-[1.6] font-medium max-w-md">
  Explore the property from every angle, calculate your investment, and schedule a private viewing.
  </p>
  </div>

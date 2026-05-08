@@ -14,7 +14,7 @@ const testimonials = [
     id: 2,
     client: "Sarah Jenkins",
     role: "Expatriate Executive",
-    text: "Moving to Ambon was a major step, and finding a residence that meets international standards was tough until I discovered Nurlete. The high-density logic and premium materiality of my unit is incredible.",
+    text: "Moving to Ambon was a major step, and finding a residence that meets international standards was tough until I discovered Nurlete. The smart layout and quality materials of my unit are incredible.",
     rating: 5
   },
   {

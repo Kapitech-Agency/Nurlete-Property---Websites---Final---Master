@@ -8,7 +8,6 @@ import Portfolio from './pages/Portfolio';
 import NavaTerraDetail from './pages/NavaTerraDetail';
 import UnitDetail from './pages/UnitDetail';
 import PropertyDetail from './pages/PropertyDetail';
-import BookingTour from './pages/BookingTour';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -35,7 +34,6 @@ export function AppRoutes() {
  <Route path="/project/nava-terra" element={<NavaTerraDetail />} />
  <Route path="/portfolio/nava-terra" element={<NavaTerraDetail />} />
  <Route path="/project/nava-terra/unit/:type" element={<UnitDetail />} />
- <Route path="/book-private-tour" element={<BookingTour />} />
  <Route path="/contact" element={<Contact />} />
  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
  <Route path="/terms-of-service" element={<TermsOfService />} />

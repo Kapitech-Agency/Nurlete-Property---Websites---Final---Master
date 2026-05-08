@@ -25,18 +25,18 @@ export function FAQ() {
  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
  return (
- <section className="py-[120px] md:py-[180px] bg-[#F5F4F0] relative z-10 border-t border-[#000000]/[0.05]">
- <div className="max-w-[1000px] mx-auto px-[20px] md:px-[80px]">
+ <section className="py-20 md:py-32 bg-[#F5F4F0] relative z-10 border-t border-[#000000]/[0.05]">
+ <div className="max-w-[900px] mx-auto px-6 md:px-12">
  
- <div className="text-center mb-[80px] flex flex-col items-center">
-   <div className="w-[64px] h-[64px] rounded-[24px] bg-[#3C2A21] text-white flex items-center justify-center shadow-xl mb-[32px]">
+ <div className="text-center mb-16 flex flex-col items-center">
+   <div className="w-16 h-16 rounded-2xl bg-[#3C2A21] text-white flex items-center justify-center shadow-xl mb-8">
       <MessageCircleQuestion size={32} />
    </div>
- <h2 className="font-sans text-[40px] md:text-[64px] font-semibold text-[#000000] tracking-tight mb-[24px]">
+ <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#000000] tracking-tight mb-6">
  Frequently Asked Questions.
  </h2>
- <p className="font-sans text-[#000000]/60 text-[18px] md:text-[20px] leading-[1.7] font-medium max-w-2xl mx-auto">
- Clarity is essential in luxury real estate. Find answers to common compliance, customization, and timeline inquiries.
+ <p className="font-sans text-[#000000]/60 text-base md:text-lg leading-[1.7] font-medium max-w-2xl mx-auto">
+ Clarity is essential in residential real estate. Find answers to common compliance, customization, and timeline inquiries.
  </p>
  </div>
 

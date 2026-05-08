@@ -44,123 +44,130 @@ export default function AboutUs() {
   };
 
   const timeline = [
-    { year: "Jan 2026", title: "Company Foundation", desc: "Nurlete Property was founded to establish a premium standard for real estate development in Eastern Indonesia, focusing on quality construction and modern design." },
-    { year: "Feb 2026", title: "Project Initiation", desc: "We secured the Nava Terra site in Halong Atas, selected for its solid coral rock foundation and elevated panoramic views." },
-    { year: "Mar 2026", title: "Design Finalization", desc: "Working with skilled architects, we finalized our modern layouts. We committed to high-grade materials and expansive natural lighting as standard features." },
-    { year: "Future 2026", title: "Continued Growth", desc: "We are expanding our portfolio with carefully selected projects in strategic locations, committed to delivering consistent value." }
+    { year: "Jan 2026", title: "Company Foundation", desc: "Nurlete Property was founded to provide affordable housing solutions in Eastern Indonesia, focusing on quality cluster homes accessible to the middle class." },
+    { year: "Feb 2026", title: "Project Initiation", desc: "We started our flagship Nava Terra cluster in Halong Atas, chosen for its safety, accessibility, and solid ground." },
+    { year: "Mar 2026", title: "Construction Start", desc: "We committed to efficient building methods and practical layouts that maximize value for every homeowner." },
+    { year: "Future 2026", title: "Community Building", desc: "Our focus remains on delivering high-quality, affordable cluster homes that serve the needs of local families." }
   ];
 
   const values = [
-    { icon: <TrendingUp size={32} />, title: "Investment Value", desc: "We focus on properties that offer strong long-term value, supported by clear neighborhood analysis and growth projections." },
-    { icon: <ShieldCheck size={32} />, title: "Structural Integrity", desc: "We utilize solid foundations and robust materials. Our goal is to build homes that are highly durable and secure." },
-    { icon: <Zap size={32} />, title: "Efficient Management", desc: "We apply modern construction management techniques to ensure efficient building processes and high-quality outcomes." },
-    { icon: <Compass size={32} />, title: "Thoughtful Design", desc: "We focus on select projects where every detail is considered, creating functional and modern living spaces." }
+    { icon: <TrendingUp size={32} />, title: "Best Value", desc: "We specialize in homes that offer the best balance of quality and price, ensuring long-term security for families." },
+    { icon: <ShieldCheck size={32} />, title: "Solid Safety", desc: "Every house is built with robust foundations and reliable materials, providing a safe environment for your community." },
+    { icon: <Zap size={32} />, title: "Ready to Move", desc: "Our efficient systems mean we deliver homes on time, so you can start your new chapter without delay." },
+    { icon: <Compass size={32} />, title: "Practical Living", desc: "We design every meter of space to be functional, ensuring our homes meet the real daily needs of modern living." }
   ];
 
   return (
-    <div className="pt-[160px] pb-0 w-full z-10 bg-[#F5F4F0] font-sans">
+    <div className="pt-24 pb-0 w-full z-10 bg-[#F5F4F0] font-sans">
       
       {/* Hero Section - Maximum Scale */}
-      <section className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[120px] md:mb-[160px]">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative h-[60vh] min-h-[500px] rounded-[32px] md:rounded-[48px] overflow-hidden border border-[#3C2A21]/20 shadow-[0_32px_80px_rgba(0,0,0,0.1)] flex items-center justify-center text-center p-[24px] md:p-[64px] w-full"
-        >
+      <section className="w-full mb-20 md:mb-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative h-[60vh] min-h-[500px] rounded-3xl md:rounded-[3rem] overflow-hidden border border-[#3C2A21]/20 shadow-[0_32px_80px_rgba(0,0,0,0.1)] flex items-center justify-center text-center p-8 md:px-16 lg:px-20 w-full"
+          >
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-            alt="Modern Architectural Vision" 
+            alt="Affordable Housing Vision" 
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#000000]/30 backdrop-blur-[1px]" />
           
           <div className="relative z-10 max-w-4xl w-full">
-            <div className="inline-flex items-center gap-[8px] px-[16px] py-[8px] rounded-full bg-white/10 backdrop-blur-xl border border-white/20 mb-[32px] shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)] min-h-[44px]">
-              <span className="w-[8px] h-[8px] rounded-full bg-[#3C2A21] animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 mb-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)] min-h-[44px]">
+              <span className="w-2 h-2 rounded-full bg-[#3C2A21] animate-pulse" />
               <span className="text-white font-bold uppercase tracking-[0.2em] text-[11px]">Est. January 2026</span>
             </div>
             
-            <h1 className="text-[48px] md:text-[80px] leading-[1.05] font-semibold text-white tracking-tight drop-shadow-2xl mb-[24px]">
-              Premium Development.<br/>
-              <span className="text-white/70">Modern Execution.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-[1.05] font-semibold text-white tracking-tight drop-shadow-2xl mb-6">
+              Quality Homes.<br/>
+              <span className="text-white/70">Affordable Living.</span>
             </h1>
-            <p className="text-white/90 text-[18px] md:text-[22px] leading-[1.6] font-medium max-w-3xl mx-auto">
-              Based in Maluku, Nurlete Property develops premium real estate for clients who value quality construction, functional design, and long-term asset value.
+            <p className="text-white/90 text-base md:text-lg lg:text-xl leading-[1.6] font-medium max-w-3xl mx-auto">
+              Based in Maluku, Nurlete Property builds high-quality cluster homes for families who value safety, practical design, and incredible value.
             </p>
           </div>
         </motion.div>
+        </div>
       </section>
 
       {/* Innovation Matrix */}
-      <section className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[120px] md:mb-[160px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[120px] items-center">
+      <section className="w-full mb-20 md:mb-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           <div>
-            <h2 className="text-[32px] md:text-[56px] leading-[1.05] font-semibold text-[#000000] tracking-tight mb-[32px]">A Higher Standard of<br/>Development</h2>
-            <p className="text-[#000000]/70 text-[18px] md:text-[20px] leading-[1.7] font-medium mb-[32px]">
-              Established in early 2026, Nurlete Property was built to implement high-quality design and robust structural integrity in Eastern Indonesia.
+            <h2 className="text-3xl md:text-4xl lg:text-5xl leading-[1.05] font-semibold text-[#000000] tracking-tight mb-8">A New Standard of<br/>Accessible Housing</h2>
+            <p className="text-[#000000]/70 text-lg md:text-xl leading-[1.7] font-medium mb-8">
+              Established in January 2026, Nurlete Property was created to provide hard-working families with safe, modern, and high-quality cluster housing that doesn't break the bank.
             </p>
-            <p className="text-[#000000]/70 text-[18px] md:text-[20px] leading-[1.7] font-medium">
-              We carefully analyze location potential, geological stability, and architectural functionality to ensure our projects are valuable assets for the future.
+            <p className="text-[#000000]/70 text-lg md:text-xl leading-[1.7] font-medium">
+              We focus on the essentials: strong foundations, smart layouts, and strategic locations that ensure your home is a reliable asset for years to come.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px]">
-            <div className="bg-white p-[40px] rounded-[32px] border border-[#3C2A21]/10 shadow-[0_24px_48px_rgba(0,0,0,0.02)]">
-              <Compass className="text-[#3C2A21] mb-[24px]" size={40} />
-              <h3 className="font-bold text-[#000000] text-[22px] mb-[12px]">Location Strategy</h3>
-              <p className="text-[#000000]/50 text-[15px] font-medium leading-[1.6]">Detailed research to select the best locations for growth and stability.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="bg-white p-8 md:p-10 lg:p-12 rounded-[2rem] border border-[#3C2A21]/10 shadow-[0_24px_48px_rgba(0,0,0,0.02)]">
+              <Compass className="text-[#3C2A21] mb-6" size={40} />
+              <h3 className="font-bold text-[#000000] text-[1.375rem] mb-3">Accessible Locations</h3>
+              <p className="text-[#000000]/50 text-[15px] font-medium leading-[1.6]">We select sites that offer easy access to transport, schools, and markets.</p>
             </div>
-            <div className="bg-[#3C2A21] text-white p-[40px] rounded-[32px] shadow-[0_32px_64px_rgba(60,42,33,0.2)]">
-              <Sparkles className="text-white mb-[24px]" size={40} />
-              <h3 className="font-bold text-white text-[22px] mb-[12px]">Functional Design</h3>
-              <p className="text-white/60 text-[15px] font-medium leading-[1.6]">Modern design focused on practical spaces and natural light.</p>
+            <div className="bg-[#3C2A21] text-white p-8 md:p-10 lg:p-12 rounded-[2rem] shadow-[0_32px_64px_rgba(60,42,33,0.2)]">
+              <Sparkles className="text-white mb-6" size={40} />
+              <h3 className="font-bold text-white text-[1.375rem] mb-3">Modern Comfort</h3>
+              <p className="text-white/60 text-[15px] font-medium leading-[1.6]">Simple, elegant design that maximizes space for your family to grow.</p>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
       {/* CEO Narrative */}
-      <section className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[120px] md:mb-[160px]">
-        <div className="bg-[#000000] text-white rounded-[48px] p-[40px] md:p-[80px] relative overflow-hidden flex flex-col lg:flex-row items-center gap-[64px]">
+      <section className="w-full mb-20 md:mb-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="bg-[#000000] text-white rounded-3xl md:rounded-[3rem] p-12 md:p-16 lg:p-20 relative overflow-hidden flex flex-col lg:flex-row items-center gap-16">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 pointer-events-none" />
           <div className="w-full lg:w-[45%] relative z-10">
-            <div className="w-[80px] h-[4px] bg-[#3C2A21] mb-[40px]" />
-            <h2 className="text-[36px] md:text-[56px] leading-[1.1] font-semibold mb-[40px] tracking-tight">Quality Over Compromise.</h2>
-            <p className="text-white/70 text-[18px] md:text-[20px] leading-[1.8] font-medium mb-[32px]">
-              "When I founded Nurlete Property in January 2026, the goal was simple: to build homes that last. We prioritize strong foundations and practical design over empty promises."
+            <div className="w-20 h-[4px] bg-[#3C2A21] mb-10" />
+            <h2 className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-semibold mb-10 tracking-tight">Focus on What Matters.</h2>
+            <p className="text-white/70 text-lg md:text-xl lg:text-2xl leading-[1.8] font-medium mb-8">
+              "When I founded Nurlete Property in January 2026, my goal was to bring quality housing to everyone. We cut out the unnecessary extras to focus on what families really need: a safe roof and a solid floor."
             </p>
-            <p className="text-white/70 text-[18px] md:text-[20px] leading-[1.8] font-medium mb-[48px]">
-              "We serve clients who understand that premium real estate is the result of careful engineering and thoughtful planning."
+            <p className="text-white/70 text-lg md:text-xl lg:text-2xl leading-[1.8] font-medium mb-12">
+              "We serve the hard-working people of Ambon and beyond, providing accessible homes that don't compromise on building standards."
             </p>
-            <div className="flex items-center gap-[20px]">
-              <div className="w-[64px] h-[64px] rounded-full bg-[#3C2A21] flex items-center justify-center font-bold text-[24px] text-white shadow-xl">F.N</div>
+            <div className="flex items-center gap-5">
+              <div className="w-16 h-16 rounded-full bg-[#3C2A21] flex items-center justify-center font-bold text-2xl text-white shadow-xl">F.N</div>
               <div>
-                <span className="block text-[20px] font-bold text-white">Firdaus Nurlete</span>
-                <span className="block text-[16px] text-white/50 font-medium">Founder & CEO</span>
+                <span className="block text-xl font-bold text-white">Firdaus Nurlete</span>
+                <span className="block text-base text-white/50 font-medium">Founder & CEO</span>
               </div>
             </div>
           </div>
           <div className="w-full lg:w-[55%] relative z-10">
-            <div className="aspect-[16/10] rounded-[32px] overflow-hidden border border-white/10 shadow-2xl">
+            <div className="aspect-[16/10] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
               <img src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Detail-oriented Construction" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Timeline width Wide scaling */}
-      <section className="mb-[120px] md:mb-[160px] overflow-hidden relative">
-        <div className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[64px] flex flex-col md:flex-row md:items-end justify-between gap-[32px]">
+      <section className="mb-20 md:mb-32 overflow-hidden relative">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-[32px] md:text-[48px] leading-[1.2] font-semibold text-[#000000] tracking-tight mb-[16px]">Company Timeline</h2>
-            <p className="text-[#000000]/50 text-[18px] font-medium">Key milestones in our development journey.</p>
+            <h2 className="text-3xl md:text-4xl leading-[1.2] font-semibold text-[#000000] tracking-tight mb-4">Company Timeline</h2>
+            <p className="text-[#000000]/50 text-lg font-medium">Key milestones in our development journey.</p>
           </div>
-          <div className="hidden md:flex items-center gap-[12px] text-[#000000]/30 font-bold text-[12px] uppercase tracking-widest bg-[#000000]/5 px-[24px] py-[12px] rounded-full border border-[#3C2A21]/10">
+          <div className="hidden md:flex items-center gap-3 text-[#000000]/30 font-bold text-[12px] uppercase tracking-widest bg-[#000000]/5 px-6 py-3 rounded-full border border-[#3C2A21]/10">
             Swipe to Navigate
           </div>
         </div>
 
-        <div className="w-full relative px-[20px] md:px-[80px] max-w-[1800px] mx-auto">
+        <div className="w-full relative px-4 md:px-8">
           <div 
             ref={scrollRef}
             onMouseDown={handleMouseDown}
@@ -168,19 +175,51 @@ export default function AboutUs() {
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
             onScroll={handleScroll}
-            className={`flex gap-[40px] overflow-x-auto pb-[40px] pt-[20px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden relative z-10 ${
+            className={`flex gap-10 overflow-x-auto pb-10 pt-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden relative z-10 ${
               isDragging ? 'cursor-grabbing' : 'cursor-grab'
             }`}
           >
             {timeline.map((item, idx) => (
               <motion.div 
                 key={idx}
-                className="min-w-[380px] md:min-w-[500px] bg-white border border-[#3C2A21]/20 rounded-[40px] p-[48px] shadow-[0_32px_64px_rgba(0,0,0,0.03)] hover:-translate-y-4 transition-all duration-500 group select-none"
+                className="min-w-[300px] md:min-w-[480px] bg-white border border-[#3C2A21]/20 rounded-[2.5rem] p-12 shadow-[0_32px_64px_rgba(0,0,0,0.03)] hover:-translate-y-4 transition-all duration-500 group select-none"
               >
-                <span className="inline-block px-[16px] py-[8px] bg-[#3C2A21]/5 text-[#3C2A21] font-bold text-[13px] tracking-widest uppercase rounded-full mb-[32px]">{item.year}</span>
-                <h3 className="text-[28px] font-semibold text-[#000000] mb-[20px] tracking-tight">{item.title}</h3>
-                <p className="text-[#000000]/60 text-[16px] md:text-[18px] leading-[1.7] font-medium">
+                <span className="inline-block px-4 py-2 bg-[#3C2A21]/5 text-[#3C2A21] font-bold text-[13px] tracking-widest uppercase rounded-full mb-8">{item.year}</span>
+                <h3 className="text-3xl font-semibold text-[#000000] mb-5 tracking-tight">{item.title}</h3>
+                <p className="text-[#000000]/60 text-base md:text-lg leading-[1.7] font-medium">
                   {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+        </div>
+      </section>
+
+      {/* Values Grid - High Density Width */}
+      <section className="w-full mb-20 md:mb-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#000000] tracking-tight mb-6">Brand Values</h2>
+            <p className="text-[#000000]/50 text-lg font-medium">The principles that guide our development process.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((value, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="bg-white border border-[#3C2A21]/10 rounded-3xl p-10 shadow-[0_24px_48px_rgba(0,0,0,0.02)] hover:bg-[#3C2A21] group transition-all duration-500"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-[#3C2A21]/5 text-[#3C2A21] flex items-center justify-center mb-8 group-hover:bg-white group-hover:scale-110 transition-all duration-500">
+                  {value.icon}
+                </div>
+                <h4 className="text-2xl font-semibold text-[#000000] group-hover:text-white mb-4 transition-colors">{value.title}</h4>
+                <p className="text-[#000000]/50 group-hover:text-white/70 text-[15px] font-medium leading-[1.6] transition-colors">
+                  {value.desc}
                 </p>
               </motion.div>
             ))}
@@ -188,61 +227,34 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Values Grid - High Density Width */}
-      <section className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[120px] md:mb-[160px]">
-        <div className="text-center mb-[80px]">
-          <h2 className="text-[36px] md:text-[56px] font-semibold text-[#000000] tracking-tight mb-[24px]">Brand Values</h2>
-          <p className="text-[#000000]/50 text-[18px] font-medium">The principles that guide our development process.</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
-          {values.map((value, idx) => (
-            <motion.div 
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white border border-[#3C2A21]/10 rounded-[32px] p-[40px] shadow-[0_24px_48px_rgba(0,0,0,0.02)] hover:bg-[#3C2A21] group transition-all duration-500"
-            >
-              <div className="w-[64px] h-[64px] rounded-[24px] bg-[#3C2A21]/5 text-[#3C2A21] flex items-center justify-center mb-[32px] group-hover:bg-white group-hover:scale-110 transition-all duration-500">
-                {value.icon}
-              </div>
-              <h4 className="text-[22px] font-semibold text-[#000000] group-hover:text-white mb-[16px] transition-colors">{value.title}</h4>
-              <p className="text-[#000000]/50 group-hover:text-white/70 text-[15px] font-medium leading-[1.6] transition-colors">
-                {value.desc}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
       {/* Architectural Philosophy Section */}
-      <section className="px-[20px] md:px-[80px] max-w-[1600px] mx-auto mb-[120px] md:mb-[160px]">
-        <div className="bg-[#000000] text-white rounded-[48px] p-[40px] md:p-[80px] relative overflow-hidden flex flex-col items-center text-center">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#3C2A21]/20 to-[#000000] pointer-events-none" />
-          <div className="relative z-10 w-full max-w-4xl">
-            <h2 className="text-[36px] md:text-[56px] leading-[1.1] font-semibold tracking-tight text-white mb-[32px]">
-              Our Philosophy: <br/> Purposeful Design.
-            </h2>
-            <p className="text-white/70 text-[18px] md:text-[22px] leading-[1.8] font-medium mb-[48px]">
-              We believe a home should elevate your daily life. By avoiding unnecessary ornamentation, we focus on spatial flow, natural light, and quality materials. Every element serves a practical purpose, creating comfortable and efficient environments.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-              <div className="bg-[#1A1A1A] p-[32px] rounded-[32px] border border-white/5 shadow-2xl">
-                <span className="block text-[48px] font-bold text-white mb-[8px]">01</span>
-                <h4 className="text-[18px] font-bold text-white mb-[12px]">Light Mapping</h4>
-                <p className="text-white/50 text-[14px] leading-[1.6]">Calculating diurnal solar paths to maximize natural illumination while minimizing heat gain.</p>
-              </div>
-              <div className="bg-[#1A1A1A] p-[32px] rounded-[32px] border border-white/5 shadow-2xl">
-                <span className="block text-[48px] font-bold text-white mb-[8px]">02</span>
-                <h4 className="text-[18px] font-bold text-white mb-[12px]">Air Flow Matrix</h4>
-                <p className="text-white/50 text-[14px] leading-[1.6]">Strategically positioning apertures to create natural cross-ventilation, reducing reliance on artificial cooling.</p>
-              </div>
-              <div className="bg-[#1A1A1A] p-[32px] rounded-[32px] border border-white/5 shadow-2xl">
-                <span className="block text-[48px] font-bold text-white mb-[8px]">03</span>
-                <h4 className="text-[18px] font-bold text-white mb-[12px]">Material Honesty</h4>
-                <p className="text-white/50 text-[14px] leading-[1.6]">Utilizing exposed concretes, natural timber, and high-density glass to showcase raw structural beauty.</p>
+      <section className="w-full mb-20 md:mb-32">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+          <div className="bg-[#000000] text-white rounded-3xl md:rounded-[3rem] p-12 md:p-16 lg:p-20 relative overflow-hidden flex flex-col items-center text-center">
+            <div className="absolute inset-0 bg-gradient-to-b from-[#3C2A21]/20 to-[#000000] pointer-events-none" />
+            <div className="relative z-10 w-full max-w-4xl">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-semibold tracking-tight text-white mb-8">
+                Our Philosophy: <br/> Purposeful Design.
+              </h2>
+              <p className="text-white/70 text-lg md:text-xl lg:text-2xl leading-[1.8] font-medium mb-12">
+                We believe a home should elevate your daily life. By avoiding unnecessary ornamentation, we focus on spatial flow, natural light, and quality materials. Every element serves a practical purpose, creating comfortable and efficient environments.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-[#1A1A1A] p-8 rounded-[2rem] border border-white/5 shadow-2xl">
+                  <span className="block text-[3rem] font-bold text-white mb-2">01</span>
+                  <h4 className="text-lg font-bold text-white mb-3">Light Mapping</h4>
+                  <p className="text-white/50 text-[14px] leading-[1.6]">Calculating diurnal solar paths to maximize natural illumination while minimizing heat gain.</p>
+                </div>
+                <div className="bg-[#1A1A1A] p-8 rounded-[2rem] border border-white/5 shadow-2xl">
+                  <span className="block text-[3rem] font-bold text-white mb-2">02</span>
+                  <h4 className="text-lg font-bold text-white mb-3">Air Flow Matrix</h4>
+                  <p className="text-white/50 text-[14px] leading-[1.6]">Strategically positioning apertures to create natural cross-ventilation, reducing reliance on artificial cooling.</p>
+                </div>
+                <div className="bg-[#1A1A1A] p-8 rounded-[2rem] border border-white/5 shadow-2xl">
+                  <span className="block text-[3rem] font-bold text-white mb-2">03</span>
+                  <h4 className="text-lg font-bold text-white mb-3">Material Honesty</h4>
+                  <p className="text-white/50 text-[14px] leading-[1.6]">Utilizing exposed concretes, natural timber, and high-density glass to showcase raw structural beauty.</p>
+                </div>
               </div>
             </div>
           </div>
